@@ -20,7 +20,7 @@ header .container {
     display: grid;
     grid-template-columns: 85px 1fr auto;
     align-items: center;
-    padding: 1.5rem 16rem 6rem;
+    padding: 1.5rem 8rem 6rem;
 }
 
 .container {
@@ -67,7 +67,7 @@ footer li{
 }
 
 .inner-wrapper{
-    padding: 0 16rem;
+    padding: 0 8rem;
     display: flex;
     gap: 4rem;
 }
@@ -95,20 +95,6 @@ footer li{
     padding: 24px;
     width: 360px;
     background-color: #c5ccf7;
-}
-
-.subscribe{
-    color: white;
-    background-color: black;
-    border-radius:24px; 
-    padding: 10px;
-    position: absolute; 
-    margin-left: 210px;
-}
-
-.subscribe:hover{
-    background-color: rgb(51, 75, 247);
-    cursor: pointer;
 }
 
 .inner-right-wrapper{
@@ -172,7 +158,6 @@ footer{
 
 .footer-fix{
     display: flex;
-    margin-left: 150px;
 }
 
 nav li:hover {
@@ -280,9 +265,25 @@ ul{
 
 @media screen and (max-width: 800px) {
     .inner-wrapper{
-        flex-direction: column;
+        flex-direction: column;
     }
+
+    .footer-coloumn-1{
+        margin-right: 0px;
+    }
+
+    .footer-fix{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+
+    .footer-coloumn-2{
+        margin-top: 3rem;
+    }
+
     .footer-wrapper{
         flex-direction: column;
+        align-items: center;
     }
 }
